@@ -1,0 +1,81 @@
+/* Style the links inside the pill navigation menu */
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  border-style: outset;
+}
+
+td:nth-child(odd), th:nth-child(odd) {
+  background-color: #D6EEEE;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: right;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.status {
+  color: black;
+  animation: statusAnimation 5s ease 1s 1 forwards;
+  animation-iteration-count: infinite;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:10%;
+  background-color: #ddd;
+  color: black;
+  text-align: end;
+  font-size: 100%;
+}
+
+@keyframes statusAnimation {
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+  
+}
